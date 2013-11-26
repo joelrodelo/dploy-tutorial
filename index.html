@@ -31,16 +31,62 @@
     <h2>¿Qué es DPLOY?</h2>
     <p>DPLOY es un herramienta que sirve para hacer <a href="http://en.wikipedia.org/wiki/Software_deployment">deployment</a> vía <a href="http://es.wikipedia.org/wiki/File_Transfer_Protocol">FTP/SFTP</a> y esta construida en <a href="http://nodejs.org/">node.js</a></p>
 
-    <ol>
-      <li>Instrucciones
-<pre>
-<code>
-  code
-</code>
-</pre>
+    <h3>Instrucciones de uso</h3>
 
-      </li>
-    </ol>
+<ol>
+  <li>Instalar <b>DPLOY</b> de manera global, y sus dependencias, mediante:
+    <pre>
+      <code>
+npm install dploy -g
+      </code>
+    </pre>
+    <small>Dependiendo de tu instalacion de NPM puede ser necesario utilizar el comando "<b>sudo npm install dploy -g</b>"</small>
+  </li>
+
+  <li>Configura <b>DPLOY</b> en tu proyecto
+    <pre>
+      <code>
+cd TuProyecto/
+dploy install
+      </code>
+    </pre>
+  </li>
+
+  <li><b>DPLOY</b> creará el archivo "<b>dploy.yaml</b>" el cual deberás llenar con la siguiente configuración usando los datos de tu servidor.
+    <pre>
+      <code>
+server_name:
+  host: ftp.myserver.com
+  user: user
+  pass: password
+  path:
+    local: deploy/
+    remote: public_html/
+      </code>
+    </pre>
+  </li>
+
+  <li>Recomiendo agregar el archivo "<b>dploy.yaml</b>" al archivo "<b>.gitignore</b>", ya que contiene información importante sobre tu servidor y no queremos que quede accesible.<br><br>Una vez completado este paso importante haremos un "<b>commit</b>" ya que es necesario para hacer el <em>deployment</em>.
+    <pre>
+      <code>
+git init
+git add .
+git commit -m "Initial commit"
+      </code>
+    </pre>
+  </li>
+
+  <li>Por ultimo corre el siguiente comando para hacer el "<b>deployment</b> a tu server
+    <pre>
+      <code>
+dploy server_name
+      </code>
+    </pre>
+    <small>Es necesario haber creado la carpeta remota en tu servidor antes de hacer el <em>deploy</em></small>
+  </li>
+
+</ol>
+
   </div>
 
 </body>

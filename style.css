@@ -23,8 +23,8 @@ html, body {
 }
 
 body {
-  background: #fff;
-  color: #585858;
+  background: #fefefe;
+  color: #646464;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 100%;
   font-weight: 500;
@@ -34,13 +34,13 @@ body {
 }
 
 a {
-  color: black;
+  color: teal;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
-  color: tomato;
+  /*color: tomato;*/
   text-decoration: underline;
 }
 
@@ -51,31 +51,49 @@ a:active {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Droid Serif', Georgia, serif;
+  color: #323234;
 }
 
 
 h1 {
   font-size: 28px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 h2 {
   font-size: 20px;
-  margin-bottom: 15px;
+  margin: 30px 0 0 0;
+}
+
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 40px 0 0 0;
+  letter-spacing: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 p {
-  margin: 0 0 15px 0;
+  margin: 15px 0;
   font-size: 15px;
   font-weight: 500;
 }
 
 ol {
-  margin: 40px auto;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  margin: 20px auto: ;
+  margin: 20px auto;
+}
+
+li small {
+  margin: 0 0 30px 0;
+  display: block;
+  padding: 0;
 }
 
 .container {
@@ -90,7 +108,7 @@ pre {
   background: #f2f2f2;
   border: 1px solid #e2e2e2;
   border-radius: 4px;
-  padding: 10px 10px 10px 60px;
+  padding: 5px 5px 5px 20px;
   margin: 10px auto;
   overflow: auto;
   max-width: 100%;
@@ -100,6 +118,6 @@ code {
 width: 100%;
 height: auto;
 font-family: "Monaco",monospace,serif;
-font-size: 15px;
+font-size: 14px;
 color: tomato;
 }
