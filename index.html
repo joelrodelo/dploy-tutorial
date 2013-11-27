@@ -36,9 +36,8 @@
 <ol>
   <li>Instalar <b>DPLOY</b> de manera global, y sus dependencias, mediante:
     <pre>
-      <code>
-npm install dploy -g
-      </code>
+<code>
+npm install dploy -g</code>
     </pre>
     <small>Dependiendo de tu instalacion de NPM puede ser necesario utilizar el comando "<b>sudo npm install dploy -g</b>"</small>
   </li>
@@ -47,8 +46,7 @@ npm install dploy -g
     <pre>
       <code>
 cd TuProyecto/
-dploy install
-      </code>
+dploy install</code>
     </pre>
   </li>
 
@@ -60,9 +58,8 @@ server_name:
   user: user
   pass: password
   path:
-    local: deploy/
-    remote: public_html/
-      </code>
+    local:
+    remote: httpdocs/TuProyecto</code>
     </pre>
   </li>
 
@@ -71,16 +68,14 @@ server_name:
       <code>
 git init
 git add .
-git commit -m "Initial commit"
-      </code>
+git commit -m "Initial commit"</code>
     </pre>
   </li>
 
   <li>Por ultimo corre el siguiente comando para hacer el "<b>deployment</b> a tu server
     <pre>
       <code>
-dploy server_name
-      </code>
+dploy server_name</code>
     </pre>
     <small>Es necesario haber creado la carpeta remota en tu servidor antes de hacer el <em>deploy</em></small>
   </li>
@@ -88,6 +83,8 @@ dploy server_name
 </ol>
 
   </div>
+
+<h6><a href="http://joelrodelo.com/">Joel Rodelo</a></h6>
 
 </body>
 </html>

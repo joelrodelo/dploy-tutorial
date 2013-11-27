@@ -105,8 +105,8 @@ li small {
 
 pre {
   position: relative;
-  background: #f2f2f2;
-  border: 1px solid #e2e2e2;
+  background: #343438;
+  border: 1px solid #222;
   border-radius: 4px;
   padding: 5px 5px 5px 20px;
   margin: 10px auto;
@@ -119,5 +119,16 @@ width: 100%;
 height: auto;
 font-family: "Monaco",monospace,serif;
 font-size: 14px;
-color: tomato;
+color: #eee;
+}
+
+h6 a {
+  text-align: center;
+  font-size: 14px;
+  margin: 20px auto 0 auto;
+  display: block;
+  color: #ccc;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
